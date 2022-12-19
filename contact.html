@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://xylnaeri.com/favicon/favicon.ico" sizes="32x32"/>
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!--HAMBURGER MENU SCRIPT-->
+    <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+<!--NAVIGATION-->
+<nav>
+    <ul class="menu">
+        <li class="logo"><a href="index.html"><img src="images/logonew.svg" alt="xylnaeri logo"></a></li>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="portfolio.html">Portfolio</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+    </ul>
+</nav>
+<header class="headersub">
+    <img class="imgsmall" src="images/welcome.png" alt="girl peeking from behind hands">
+</header>
+<div class="about-contact">
+    <div class="about-img-contact">
+        <img class="offset-box-contact" src="images/portrait1.jpg" alt="portrait of xylnaeri smiling">
+        <div class="about-img-box"></div>
+    </div>
+    <div class="about-right-contact">
+        <p>Hello, my name is <bold>Isabella</bold>! I am more commonly known by my online alias
+        <bold>Xylnaeri</bold>. I am currently studying multimedia design at UCL Erhvervsakademi og Professionshøjskole.
+        <br><br>
+        I love creating all kinds of things, from animation and illustration to photography and web design, if I 
+        can unfold my creativity, I will be there. 
+        <br><br>
+        If you'd like to work with me - just drop me a line or give me a call - I'd love to hear from you!
+        <br><br>
+        // <a href="mailto:xylnaeri@hotmail.com">xylnaeri@hotmail.com</a> or <a href="mailto:xylnaeri@hotmail.com">isha27098@edu.ucl.dk</a>
+        <br><br>
+        // <a href="tel:+4527213790">+45 27 21 37 90</a>
+        </p>
+    </div>
+</div>
+<footer>
+    <div class="ftsocial">
+        <ul class="ftsocial-list">
+            <li><a href="https://www.instagram.com/xylnaeri/"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://www.tiktok.com/@xylnaeri"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/Xylnaeri"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <div class="fttext">&#169; 2022, Xylnaeri</div>
+</footer>
+</body>
+</html>

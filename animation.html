@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="icon" type="image/png" href="https://xylnaeri.com/favicon/favicon.ico" sizes="32x32"/>
+    <link rel="stylesheet" href="style.css">
+    <!--HAMBURGER MENU SCRIPT-->
+    <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+<!--NAVIGATION-->
+<nav>
+    <ul class="menu">
+        <li class="logo"><a href="index.html"><img src="images/logonew.svg" alt="xylnaeri logo"></a></li>
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="portfolio.html">Portfolio</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+    </ul>
+</nav>
+<header class="headersub">
+  <div class="headertxt">Animation</div>
+</header>
+<!--CONTENT-->
+<div>
+  <div class="gallery-sub">
+      <div class="box">
+        <img src="images/animation/anim.png" alt="happy girl dancing animation" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim2.png" alt="girl floating animation" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim3.png" alt="girl blowing a kiss animation" onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim4.png" alt="cat boy dancing" onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim5.png" alt="girl being shy with hearts" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim6.jpg" alt="magical girl transformation" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim7.jpg" alt="donut car" onclick="openModal();currentSlide(7)" class="hover-shadow">
+      </div>
+      <div class="box">
+        <img src="images/animation/anim8.jpg" alt="be right back nintendo switch" onclick="openModal();currentSlide(8)" class="hover-shadow">
+      </div>
+  </div>
+</div>
+  <!--LIGHTBOX-->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="images/animation/Follower.gif" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="images/animation/Floaty.gif" style="width:100%">
+    </div>  
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="images/animation/kiss.gif" style="width:100%">
+    </div>  
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="images/animation/dance1.gif" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="images/animation//Subscriber.gif" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <video style="width:100%" controls muted>
+        <source src="images/animation/animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <video style="width:100%" controls muted>
+        <source src="images/animation/donutcar.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="images/animation/Be Right Back1.gif" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim.png" onclick="currentSlide(1)" alt="Happy dance">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim2.png" onclick="currentSlide(2)" alt="Floating">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim3.png" onclick="currentSlide(3)" alt="Blowing a kiss">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim4.png" onclick="currentSlide(4)" alt="Dancing">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim5.png" onclick="currentSlide(5)" alt="Shy">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim6.jpg" onclick="currentSlide(6)" alt="Magical girl transformation">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim7.jpg" onclick="currentSlide(7)" alt="Donut car">
+    </div>
+    <div class="column">
+      <img class="thumb" src="images/animation/anim8.jpg" onclick="currentSlide(8)" alt="Be right back screen">
+    </div>
+  </div>
+    <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }   
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      var slideIndex = 1;
+      showSlides(slideIndex);
+            
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("thumb");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+    </script>
+</div>
+
+<!--FOOTER-->
+    <footer>
+        <div class="ftsocial">
+            <ul class="ftsocial-list">
+              <li><a href="https://www.instagram.com/xylnaeri/"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+              <li><a href="https://www.tiktok.com/@xylnaeri"><i class="fa-brands fa-tiktok fa-2x"></i></a></li>
+              <li><a href="https://twitter.com/Xylnaeri"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <div class="fttext">&#169; 2022, Xylnaeri</div>
+    </footer>
+</body>
+</html>
