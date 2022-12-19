@@ -293,7 +293,6 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
 .gallery .box:hover .middle {
@@ -424,7 +423,6 @@ img {
     transition: 0.3s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
     background-color: rgba(0, 0, 0, 0.8);
 }
 .next {
@@ -592,7 +590,7 @@ img.hover-shadow {
     padding: 0px 0px 0px 30px;
 }
 .aboutborder{
-    border-color: 1rem solid;
+    border: 16px solid;
 }
 .abouthr {
     display: block;
@@ -632,8 +630,8 @@ img.hover-shadow {
     height: 700px;
     padding: 20px 20px 20px 30px;
     }
-.aboutborder{
-    border-color: 1rem solid;
+.aboutborder {
+    border: 16px solid;
     }
 /*MAIN PAGE GALLERY*/
 .portfoliohr {
