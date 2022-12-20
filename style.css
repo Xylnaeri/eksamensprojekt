@@ -226,6 +226,35 @@ a:hover {
 .about-right p {
     padding: 10px 0px
 }
+/*SKILLS*/
+.skillsbg {
+    background-color: #FCE9F3;
+    margin: auto;
+    align-content: center;
+    margin: 75px 0px;
+}
+.skillsbg h2 {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    color: #282429;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    flex-flow: wrap;
+    padding: 30px 0px;
+}
+.skills li {
+    font-family: "Poppins", sans-serif;
+    color:#282429;
+    text-align: center;
+    padding: 2px 0px;
+}
+.skillscol {
+    padding: 20px 60px;
+}
 /*ABOUT CONTACT*/
 .about-img-contact .offset-box-contact {
     display: flex;
@@ -598,7 +627,13 @@ img.hover-shadow {
     border: 1px solid #86154D;
     border-radius: 5px;
 }
-/*ABOUT CONTACT*/
+/*SKILLS*/
+.skillsbg {
+    background-color: #FCE9F3;
+    margin: auto;
+    align-content: center;
+    margin: 40px 0px;
+}
 /*CONTACT*/
 .about-img-contact .offset-box {
     display: flex;
@@ -634,12 +669,6 @@ img.hover-shadow {
     border: 16px solid;
     }
 /*MAIN PAGE GALLERY*/
-.portfoliohr {
-    height: 2px;
-    background-color: #A62264;
-    border: none;
-    margin: 0px 250px;
-    }
 .portfolioh2 {
     text-align: center;
     padding: 20px 0px;
